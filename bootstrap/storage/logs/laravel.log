@@ -1,0 +1,14 @@
+[2021-01-10 09:38:35] production.ERROR: RuntimeException: Directory name must not be empty. in P:\xampp\htdocs\phpExcercise\vendor\symfony\finder\Iterator\RecursiveDirectoryIterator.php:52
+Stack trace:
+#0 P:\xampp\htdocs\phpExcercise\vendor\symfony\finder\Iterator\RecursiveDirectoryIterator.php(52): RecursiveDirectoryIterator->__construct('', 4096)
+#1 P:\xampp\htdocs\phpExcercise\vendor\symfony\finder\Finder.php(688): Symfony\Component\Finder\Iterator\RecursiveDirectoryIterator->__construct('', 4096, false)
+#2 P:\xampp\htdocs\phpExcercise\vendor\symfony\finder\Finder.php(573): Symfony\Component\Finder\Finder->searchInDirectory('')
+#3 P:\xampp\htdocs\phpExcercise\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php(87): Symfony\Component\Finder\Finder->getIterator()
+#4 P:\xampp\htdocs\phpExcercise\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php(64): Illuminate\Foundation\Bootstrap\LoadConfiguration->getConfigurationFiles(Object(Illuminate\Foundation\Application))
+#5 P:\xampp\htdocs\phpExcercise\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php(39): Illuminate\Foundation\Bootstrap\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\Foundation\Application), Object(Illuminate\Config\Repository))
+#6 P:\xampp\htdocs\phpExcercise\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(208): Illuminate\Foundation\Bootstrap\LoadConfiguration->bootstrap(Object(Illuminate\Foundation\Application))
+#7 P:\xampp\htdocs\phpExcercise\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(162): Illuminate\Foundation\Application->bootstrapWith(Array)
+#8 P:\xampp\htdocs\phpExcercise\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(146): Illuminate\Foundation\Http\Kernel->bootstrap()
+#9 P:\xampp\htdocs\phpExcercise\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#10 P:\xampp\htdocs\phpExcercise\public\index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#11 {main}  
