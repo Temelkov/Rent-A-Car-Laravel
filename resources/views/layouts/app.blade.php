@@ -34,7 +34,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand" href="{{ url('/home') }}">
                         Rent A Car
                     </a>
                 </div>
@@ -59,7 +59,7 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
-                                        <a href="/user/{{Auth::user()->id}}/edit">Edit Profile</a>
+                                        <a href="/rentacar/public/user/{{Auth::user()->id}}/edit">Edit Profile</a>
                                     </li>
                                     <li>
                                         <a href="{{ route('logout') }}"

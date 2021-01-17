@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Lets rent your car</title>
+        <title>Laravel</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -20,10 +20,10 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-image: url("https://img.etimg.com/thumb/width-1200,height-900,imgsize-40622,resizemode-1,msid-75259494/small-biz/startups/newsbuzz/self-drive-vehicle-rental-companies-spot-a-fast-lane-to-riches.jpg");
+                background-image: url("/public/img/background.jpg");
                 background-position: center;
                 background-repeat: no-repeat;
-                background-size: cover; 
+                background-size: cover;
                 color: black;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 140;
@@ -53,6 +53,7 @@
 
             .content {
                 text-align: center;
+                margin-left: -130px;
             }
 
             .title {
@@ -93,20 +94,19 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
-{{--                        <a href="{{ url('/home') }}" style="border:1.5px white;border-style: solid;border-radius: 50px; padding: 7px 8px 7px 8px; color: white; background-color: lightslategrey">You are login - Dashboard</a>--}}
-                        <a href="{{ url('/home') }}" class="btn btn-info" style="padding: 7px 8px 7px 8px;">You are login - Dashboard</a>
+                        <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ url('/login') }}" class="btn btn-info" style="padding: 7px 8px 7px 8px;">Login</a>
-                        <a href="{{ url('/register') }}" class="btn btn-info" style="padding: 7px 8px 7px 8px;">Register</a>
+                        <a href="{{ url('/login') }}">Login</a>
+                        <a href="{{ url('/register') }}">Register</a>
                     @endif
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Let's Rent a Car
+                    Rent a Car
                 </div>
-                <p><i>Registr</i> or <i>Login</i> and choose a car for your needs and entertainment wherever you are. Just register or log in to your account.</p>
+                <p>Enjoy with our comfortable cars wherever you go, Register/Login now.</p>
             </div>
         </div>
     </body>
