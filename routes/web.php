@@ -1,7 +1,11 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CarsController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LocationsController;
+use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +29,7 @@ Route::resource('user', 'UserController');
 
 
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+//Route::get('/user', [UserController::class, 'update'])->name('user');
+//Route::get('/car', [CarsController::class, 'index'])->name('car');
+//Route::get('/location', [LocationsController::class, 'index'])->name('locations');

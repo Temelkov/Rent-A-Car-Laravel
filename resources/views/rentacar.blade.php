@@ -10,7 +10,7 @@
                 <h4 class="text-center">Enjoy your trip</h4>
             </div>
             <div class="panel-body text-center">
-                <a href="/public/home" class="btn btn-info">Home</a>
+                <a href="/home" class="btn btn-info">Home</a>
             </div>
         </div>
     </div>

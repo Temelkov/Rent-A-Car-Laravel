@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-md-8 col-md-offset-2">
         <div class="panel panel-default">
-            <div class="panel-heading"><strong>{{$location->city}}</strong> <a href="/public/home" class="pull-right btn btn-default btn-xs">Go Back</a></div>
+            <div class="panel-heading"><strong>{{$location->city}}</strong> <a href="/home" class="pull-right btn btn-default btn-xs">Go Back</a></div>
 
             <div class="panel-body">
               <ul class="list-group">
@@ -42,12 +42,12 @@
                                 <td>{{$car->year}}</td>
                                 <td>{{$car->fuel}}</td>
                                 <td>{{$car->price}} EUR</td>
-                                <td><a href="/rentacar/public/cars/{{$car->id}}" class="btn btn-info btn-xs">Rent</a></td>
-                                <td><a href="/rentacar/public/cars/{{$car->id}}/edit" class="btn btn-warning btn-xs pull-right">Edit</a></td>
+                                <td><a href="/cars/{{$car->id}}" class="btn btn-info btn-xs">Rent</a></td>
+                                <td><a href="/cars/{{$car->id}}/edit" class="btn btn-warning btn-xs pull-right">Edit</a></td>
                                 <td>{{-- laravelcollective --}}
                                     {!!Form::open(['action' => ['CarsController@destroy', $car->id],'method' => 'POST', 'class' => 'pull-left', 'onsubmit' => 'return confirm("Are you sure?")'])!!}
                                       {{Form::hidden('_method', 'DELETE')}}
-                                      {{Form::bsSubmit('Delete', ['class' => 'btn btn-danger btn-xs'])}}
+                                      {{Form::Submit('Delete', ['class' => 'btn btn-danger btn-xs'])}}
                                     {!! Form::close() !!}</td>
                             </tr>
                             @endif
