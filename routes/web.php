@@ -28,7 +28,6 @@ Route::resource('cars', 'CarsController');
 Route::resource('user', 'UserController');
 
 
-
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 //Route::get('/user', [UserController::class, 'update'])->name('user');
 //Route::get('/car', [CarsController::class, 'index'])->name('car');
