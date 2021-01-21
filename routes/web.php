@@ -32,3 +32,8 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 //Route::get('/user', [UserController::class, 'update'])->name('user');
 //Route::get('/car', [CarsController::class, 'index'])->name('car');
 //Route::get('/location', [LocationsController::class, 'index'])->name('locations');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
