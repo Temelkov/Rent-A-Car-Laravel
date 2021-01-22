@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Locations;
 use App\Car;
-use App\User;
 
 class CarsController extends Controller
 {
@@ -32,8 +31,8 @@ class CarsController extends Controller
         $cars->model = $request->input('model');
         $cars->year = $request->input('year');
         $cars->fuel = $request->input('fuel');
-        $cars->price = $request->input('price');    
-        
+        $cars->price = $request->input('price');
+
         $cars->save();
 
         return redirect('/home')->with('success', 'Car Added Successfully');
@@ -42,7 +41,7 @@ class CarsController extends Controller
 
     public function edit($id)
     {
-       
+
         $cars = Car::find($id);
         return view('editcar')->with('cars', $cars);
     }
@@ -65,8 +64,8 @@ class CarsController extends Controller
         $cars->model = $request->input('model');
         $cars->year = $request->input('year');
         $cars->fuel = $request->input('fuel');
-        $cars->price = $request->input('price');    
-        
+        $cars->price = $request->input('price');
+
         $cars->save();
 
         return redirect('/home')->with('success', 'Car Updated Successfully');

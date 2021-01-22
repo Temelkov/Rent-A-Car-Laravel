@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Locations;
 use App\Car;
-use App\User;
 
 
 class LocationsController extends Controller
@@ -56,7 +55,7 @@ class LocationsController extends Controller
         $location->email = $request->input('email');
         $location->address = $request->input('address');
         $location->phone = $request->input('phone');
-        
+
         $location->save();
 
         return redirect('/home')->with('success', 'Location Added');
@@ -109,7 +108,7 @@ class LocationsController extends Controller
         $location->email = $request->input('email');
         $location->address = $request->input('address');
         $location->phone = $request->input('phone');
-        
+
         $location->save();
 
         return redirect('/home')->with('success', 'Location Updated');
@@ -135,5 +134,5 @@ class LocationsController extends Controller
 
         return view('addcar')->with('cars',$cars);
     }
-    
+
 }

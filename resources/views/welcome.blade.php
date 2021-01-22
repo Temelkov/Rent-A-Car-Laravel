@@ -93,7 +93,6 @@
     @if (Route::has('login'))
         <div class="top-right links">
             @if (Auth::check())
-                {{--                        <a href="{{ url('/home') }}" style="border:1.5px white;border-style: solid;border-radius: 50px; padding: 7px 8px 7px 8px; color: white; background-color: lightslategrey">You are login - Dashboard</a>--}}
                 <a href="{{ url('/home') }}" class="btn btn-info" style="padding: 7px 8px 7px 8px;">You are login - Dashboard</a>
             @else
                 <a href="{{ url('/login') }}" class="btn btn-info" style="padding: 7px 8px 7px 8px;">Login</a>

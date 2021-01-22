@@ -6,7 +6,7 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3><span class="hometitle"> Choose the nearest location to you </span>
+                    <h3><span class="hometitle"> Let's choose your location and start ren! </span>
                       <span class="pull-right">
                         <a href="/cars/create" class="btn btn-success btn-xs " <?php if (count($locations) < 1){ ?> disabled <?php   } ?>>Add Car</a>
                       </span>
