@@ -21,6 +21,13 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## Download
+
+Fork the RentArea repository and open terminal where you want to clone it and type the following :
+```bash
+git clone https://github.com/Temelkov/Rent-A-Car-Laravel
+```
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
