@@ -28,6 +28,13 @@ Fork the RentArea repository and open terminal where you want to clone it and ty
 git clone https://github.com/Temelkov/Rent-A-Car-Laravel
 ```
 
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## To contact me or learn more about me: http://temelkov.tk
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
