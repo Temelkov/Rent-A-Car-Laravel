@@ -23,7 +23,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## Download
 
-Fork the RentArea repository and open terminal where you want to clone it and type the following :
+Fork the Rent-A-Car project repository and open terminal where you want to clone it and type the following :
 ```bash
 git clone https://github.com/Temelkov/Rent-A-Car-Laravel
 ```
