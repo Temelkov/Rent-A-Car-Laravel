@@ -33,8 +33,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-## To contact me or learn more about me: http://temelkov.tk
-
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## To contact me or learn more about me: http://temelkov.tk
